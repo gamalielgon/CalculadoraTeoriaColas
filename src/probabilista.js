@@ -28,7 +28,7 @@ function getU(a, s){
 }
 function getPn(a, s, n){
     let p = getU(a,s);
-    return ((1-p)*Math.pow(p, n))*100; 
+    return (Math.pow(p, (n+1)))*100; 
 }
 
 calcBtn.addEventListener('click', function () {
